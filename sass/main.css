@@ -211,7 +211,7 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .grid {
-    padding: 0rem 6rem 20rem;
+    padding: 0rem 6rem 25rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -666,7 +666,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .row-2 {
     width: 100%;
-    top: 15rem;
+    top: 25rem;
   }
 }
 
