@@ -1,0 +1,68 @@
+/*
+Colours
+
+Primary: #46AAB0
+Primary-light: #40A0A6
+Primary-extra-light: #4AD3DB
+
+Text-dark: #2A3737
+Text-white: FFFFFF
+*/
+
+:root {
+    --color-primary: #46AAB0;
+    --color-primary-light: #40A0A6;
+    --color-primary-extra-light: #4AD3DB;
+     
+    --color-text-dark: #2A3737;
+    --color-text-white: #FFFFFF;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+
+    --color-background: #F1F6F6;
+}
+
+$bp-largest: 75em;      // 1200px
+$bp-large: 70.9em;      // 1135px
+$bp-medium: 56.25em;    // 900px
+$bp-small: 37.5em;    // 600px
+$bp-xsmall: 28.7em;    // 400px
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;// 1rem = 10px
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+        font-size: 40%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-extra-light));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
